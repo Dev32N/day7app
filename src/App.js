@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Exam1 from './components/Exam1'
+import Exam2 from './components/Exam2'
+import Exam3 from './components/Exam3'
+import ToDoList from './components/ToDoList'
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ToDoList />
+      <Exam1 />
+      <Exam2 />
+      <Exam3 />
     </div>
-  );
+  )
 }
-
-export default App;
